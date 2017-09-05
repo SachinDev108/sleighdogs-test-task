@@ -9,7 +9,7 @@ To run the project on production server.
 
 1. npm install
 2. npm run build
-3. http-server src
+3. http-server src (if http-server is not available, please install it using npm install http-server)
 
 
 
