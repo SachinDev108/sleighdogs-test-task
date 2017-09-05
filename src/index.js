@@ -1,34 +1,22 @@
 
-var style = require('./style/globalStyle.css');
-var messages = require('./messages');
+import Styles from './styles/landingPage.css'
+import React from 'react'
+import ReactDOM from 'react-dom';
 
-// import Button from './button';
-// import Kitten from './image';
-// var newMessage = () => (
-// 	`<p>
-// 		${messages.hi} and ${messages.event}
-// 		${Kitten}
-// 	</p>`
-// );
+import LandingPage from './components/LandingPage/index.jsx'
 
-// var newMessage = () => (Button.button);
+export default class App extends React.Component {
+  render() {
+    return(
+      <LandingPage />
+    )
+  }
+}
 
-import { multiply } from './mathstuff';
+ReactDOM.render(<App />, document.getElementById('app'));
 
-const newMessage = () => (`
-	<div class="${style.box}">
-		DEV: ${DEVELOPMENT.toString()}<br>
-		PROD: ${PRODUCTION.toString()}<br>
-	</div>	
-`)
-
-
-var app = document.getElementById('app');
-app.innerHTML = newMessage()
-
-// Button.attachEl();
-if(DEVELOPMENT) {
-	if(module.hot) {
-		module.hot.accept();
-	}
+if (DEVELOPMENT) {
+  if (module.hot) {
+    module.hot.accept()
+  }
 }
