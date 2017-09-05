@@ -58,7 +58,7 @@ module.exports = {
       loader: 'babel-loader',
     },
     {
-      test: /\.(png|jpe?g|gif|eot|svg|ttf|woff)$/,
+      test: /\.(png|jpe?g|gif|eot|svg|ttf|woff|woff2)$/,
       loaders: ['url-loader?limit=10000&name=images/[hash:12].[ext]'],
       exclude: '/node_modules/',
     },

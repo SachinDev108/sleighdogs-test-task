@@ -1,5 +1,74 @@
 :local{
 	.imageWidth{
 		width: 200px;
+		@media only screen and (max-width : 768px){
+			width: 100%;
+		}
+	}
+	.product-name{
+		float: left;
+	}
+	.product-price{
+		float: right;
+	}
+	.product-row-one, .product-row-two{
+		width: 72%;
+		font-weight: bold;
+		font-size: 15px;
+		@media only screen and (max-width : 768px){
+			width: 100%;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	.product-row-one{
+		margin-top: 5px;
+	}
+	.product-row-two{
+		margin-bottom: 5px;
+	}
+	.product-description{
+		float: left;
+	}
+	.shop-button{
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		a{
+		    margin-top: 10px;
+		    background-color: #c0edde;
+		    text-transform: uppercase;
+		    width: 270px;
+		    font-size: 15px;
+		    font-weight: bold;
+		    color: black;
+		    border-color: #c0edde;
+		    border-radius: 0;
+		    &:hover{
+		    	color: black;
+		    	background-color: #c0edde;
+		    	border-color: #c0edde;
+		    }
+		}
+	}
+	.title{
+		font-weight: bold;
+		font-size: 20px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	}
+	.slides {
+		  position: relative;
+		  .slick-prev, .slick-next {
+			    position: absolute;
+			    top: 50%;
+		  }
+		  .slick-prev {
+		    	left: 5%;
+		  }
+		  .slick-next {
+		    	right: 5%;
+		  }
 	}
 }

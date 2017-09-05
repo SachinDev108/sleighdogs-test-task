@@ -1,8 +1,44 @@
 :local{
 	.imageWidth{
-		width: 200px;
+		width: 100%;
 	}
 	.left{
 		float: left;
+	}
+	.title{
+		font-weight: bold;
+		font-size: 20px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	ul{
+		height: auto;
+		overflow: hidden;
+		margin-top: 30px;
+	    li{
+		    display: inline-block;
+		    float: none;
+		    width: 300px;
+		    text-align: center;
+		    padding-right: 20px;
+		}
+	}
+	.news-row-one, .news-row-two, .news-row-three{
+		float: left;
+		font-weight: bold;
+		font-size: 15px;
+	}
+	.news-row-two{
+		text-align: left
+	}
+	.short-description{
+		text-align: left;
+	}
+	.title{
+		font-weight: bold;
+		font-size: 20px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		text-transform: uppercase;
 	}
 }

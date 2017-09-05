@@ -1,17 +1,19 @@
 import React from 'react'
+import classnames from 'classnames'
 import Styles from './styles.scss'
 import BannerImage from '../../images/banner.jpeg'
 const Banner = () => {
 	const alt = "Banner Image"
 	return(
-		<section className="jumbotron text-center">
-      <div className="container">
-        <img 
-					alt={alt}
-					src={BannerImage}
-					className={Styles.banner}
-				/>
-      </div>
+		<section>
+			<img 
+				alt={alt}
+				src={BannerImage}
+				className={classnames("img-fluid", Styles.banner)}
+			/>
+			<div className={Styles['banner-text']}>
+				Lorem ipsum sit dolor <br /> lorem amet
+			</div>
     </section>
 	)
 }
